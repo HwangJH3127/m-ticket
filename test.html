@@ -1,0 +1,503 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="mongtree">
+  <meta name="author" content="mongtree">
+  <meta name="generator" content="mongtree">
+  <title>mongtree</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../mongsang/css/main.min.css" rel="stylesheet">
+</head>
+
+<body class="pt-5 pt-lg-6">
+  <header>
+    <nav class="navbar navbar-expand-lg py-lg-3 shadow-sm fixed-top bg-white z-1100">
+      <div class="container-xxl position-relative px-3 px-lg-4">
+        <a class="navbar-brand fw-bolder fs-2 me-5 me-xl-6 me-md-5" href="index.html">M-TICKET</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header py-lg-3">
+            <a class="navbar-brand fw-bolder fs-2 me-5 me-xl-6 me-md-5" href="index.html">M-TICKET</a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-lg-flex">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="realtime_order.html">실시간 교환현황</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="giftcard_list.html">매입상품권 목록</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">고객센터</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="offcanvas-body offcanvas-body-position d-inline d-lg-flex gap-2 position-absolute end-2">
+            <a href=""><img src="../mongsang/assets/img/ico_app.png"></a>
+            <button class="border-0 bg-transparent p-0" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img
+                src="../mongsang/assets/img/ico_calculator.png"></button>
+            <a href=""><img src="../mongsang/assets/img/ico_kakao.png"></a>
+            <a href="history_login.html" class="btn btn-point text-white rounded-pill ml-5 px-4">내 교환내역</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="d-block d-lg-flex p-3 p-lg-4 container-xxl position-relative">
+    <div class="left_cont col-12 col-xxl-9 col-xl-8 col-lg-7 pe-0 pe-lg-3">
+      <section class="sub mt-5">
+        <div class="title mb-5 text-center">
+          <h3 class="fw-bolder mb-2 w-22 text-break">asddsd</h3>
+          <p class="fs-6 opacity-75">365일 24시간 상담가능 [M-TICKET고객센터 010-1111-1111]</p>
+        </div>
+
+        <!-- 고객센터 탭 -->
+        <div class="mb-4 mt-3">
+          <ul class="nav nav-tabs bg-grey" id="myTab" role="tablist">
+            <li class="nav-item col-6 fs-7" id="qna">
+              <a href="notice.html" class="nav-link w-100 text-dark text-center fs-6">공지사항</a>
+            </li>
+            <li class="nav-item col-6 fs-7">
+              <a href="faq.html" class="nav-link w-100 text-dark text-center fs-6 active">자주하는 질문</a>
+            </li>
+          </ul>
+
+            <div class="rounded-3 mt-5">
+              <div class="accordion" id="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-question-circle me-2" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                          d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                      </svg> 자주하는 질문입니다.
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                      답변입니다.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-question-circle me-2" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                          d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                      </svg>
+                      자주하는 질문입니다.
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                      답변입니다.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 우측 교환신청 고정 -->
+    <div class="mobile_fixed_btn d-block d-lg-none shadow-sm text-center border-top rounded-top-5 py-3 bg-white w-100 z-3" style="cursor:pointer; position:fixed; bottom:0;left:0;">상품권 매입 <button class="mobile-nav position-absolute lh-1 border-0 bg-white" style="right:2.5rem;"><svg class="down"
+        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+        <pathd="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+        </svg>
+        <svg class="up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-chevron-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="right_cont col-12 col-xxl-3 col-xl-4 col-lg-5 container-xxl position-sticky z-3"
+      style="transform:translate(0); height:92vh;">
+      <div class="mobile_fixed d-block d-lg-none shadow-sm text-center border-top rounded-top-5 py-3 bg-white"
+        style="cursor:pointer">상품권 매입 <button class="mobile-nav position-absolute lh-1 border-0 bg-white"
+          style="right:2.5rem;"><svg class="down" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+          </svg>
+          <svg class="up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-chevron-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+          </svg>
+        </button>
+      </div>
+      <aside class="p-4 pe-4 pe-lg-0 pt-0 bg-white end-0 border-start">
+        <!-- 상품권 선택 탭 -->
+        <div class="mb-4">
+          <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+            <li class="nav-item col-6 fs-7 p-1" role="presentation">
+              <button class="nav-link p-1 border border-2 w-100 rounded-2 text-dark active" data-bs-toggle="tab"
+                data-bs-target="#tab1-tab-pane" type="button" role="tab" aria-controls="tab1-tab-pane"
+                aria-selected="true">컬쳐랜드 문화상품권</button>
+            </li>
+            <li class="nav-item col-6 fs-7 p-1" role="presentation">
+              <button class="nav-link p-1 border border-2 w-100 rounded-2 text-dark" data-bs-toggle="tab"
+                data-bs-target="#tab2-tab-pane" type="button" role="tab" aria-controls="tab2-tab-pane"
+                aria-selected="false">해피머니 상품권</button>
+            </li>
+            <li class="nav-item col-6 fs-7 p-1" role="presentation">
+              <button class="nav-link p-1 border border-2 w-100 rounded-2 text-dark" data-bs-toggle="tab"
+                data-bs-target="#tab3-tab-pane" type="button" role="tab" aria-controls="tab3-tab-pane"
+                aria-selected="false">컬쳐랜드 교환권</button>
+            </li>
+            <li class="nav-item col-6 fs-7 p-1" role="presentation">
+              <button class="nav-link p-1 border border-2 w-100 rounded-2 text-dark" data-bs-toggle="tab"
+                data-bs-target="#tab4-tab-pane" type="button" role="tab" aria-controls="tab4-tab-pane"
+                aria-selected="false">해피머니 교환권</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 핀번호 자동 추출기 -->
+        <div class="mb-5">
+          <div class="title d-flex align-items-center mb-3">
+            <div class="ico_bg me-2 bg-grey rounded-pill text-center lh-3"
+              style="width:50px; height:50px; line-height:50px;"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                height="30" fill="currentColor" class="bi bi-calculator-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 .5v2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5zm0 4v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zM4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM4 12.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zM7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM7 9.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM10 6.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5h-1z" />
+              </svg></div>
+            <div>
+              <h5 class="fw-bolder mb-0">핀번호 자동 추출기</h5>
+              <p class="fs-7 mb-0">전송받은 문자를 입력해주세요.</p>
+            </div>
+          </div>
+          <form class="text-end">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="tab1-tab-pane" role="tabpanel" aria-labelledby="tab1-tab"
+                tabindex="0">
+                <div class="input-group mb-2">
+                  <textarea class="form-control bg-grey rounded-4" rows="7" aria-label="With textarea"
+                    placeholder="컬쳐랜드 문화상품권"></textarea>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab2-tab-pane" role="tabpanel" aria-labelledby="tab2-tab" tabindex="0">
+                <div class="input-group mb-2">
+                  <textarea class="form-control bg-grey rounded-4" rows="7" aria-label="With textarea"
+                    placeholder="해피머니 상품권"></textarea>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab3-tab-pane" role="tabpanel" aria-labelledby="tab3-tab" tabindex="0">
+                <div class="input-group mb-2">
+                  <textarea class="form-control bg-grey rounded-4" rows="7" aria-label="With textarea"
+                    placeholder="컬쳐랜드 교환권"></textarea>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab4-tab-pane" role="tabpanel" aria-labelledby="tab4-tab" tabindex="0">
+                <div class="input-group mb-2">
+                  <textarea class="form-control bg-grey rounded-4" rows="7" aria-label="With textarea"
+                    placeholder="해피머니 교환권"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-dark w-50">핀번호 추출</button>
+          </form>
+        </div>
+
+        <!-- 핀번호 수동 입력기 -->
+        <div class="mb-5">
+          <div class="title d-flex align-items-center mb-3">
+            <div class="ico_bg me-2 bg-grey rounded-pill text-center"
+              style="width:50px; height:50px; line-height:50px;"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                height="30" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+              </svg></div>
+            <div>
+              <h5 class="fw-bolder mb-0">핀번호 수동 입력</h5>
+              <p class="fs-7 mb-0">정확한 정보로 작성해주세요.</p>
+            </div>
+          </div>
+          <form>
+            <div class="input-group mb-1">
+              <span class="input-group-text bg-dark text-white">1</span>
+              <input type="text" class="form-control" placeholder="핀(PIN)번호 입력" aria-label="FIN"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-1">
+              <span class="input-group-text bg-dark text-white">2</span>
+              <input type="text" class="form-control" placeholder="핀(PIN)번호 입력" aria-label="FIN"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-1">
+              <span class="input-group-text bg-dark text-white">3</span>
+              <input type="text" class="form-control" placeholder="핀(PIN)번호 입력" aria-label="FIN"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-1">
+              <span class="input-group-text bg-dark text-white">4</span>
+              <input type="text" class="form-control" placeholder="핀(PIN)번호 입력" aria-label="FIN"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-1">
+              <span class="input-group-text bg-dark text-white">5</span>
+              <input type="text" class="form-control" placeholder="핀(PIN)번호 입력" aria-label="FIN"
+                aria-describedby="basic-addon1">
+            </div>
+            <button type="submit" class="btn btn-dark w-100">핀번호 추가 +</button>
+          </form>
+        </div>
+
+        <!-- 입금정보 확인 -->
+        <div class="mb-5">
+          <div class="title d-flex align-items-center mb-3">
+            <div class="ico_bg me-2 bg-grey rounded-pill text-center lh-3"
+              style="width:50px; height:50px; line-height:50px;"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                height="30" fill="currentColor" class="bi bi-vector-pen" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828L10.646.646zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z" />
+                <path fill-rule="evenodd" d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086.086-.026z" />
+              </svg></div>
+            <div>
+              <h5 class="fw-bolder mb-0">입금정보 확인</h5>
+              <p class="fs-7 mb-0">계좌 정보를 입력해주세요.</p>
+            </div>
+          </div>
+          <form class="text-end">
+            <div class="mb-2">
+              <select class="form-select mb-2 bg-grey" aria-label="Default select example">
+                <option selected>은행 선택</option>
+                <option value="1">국민은행</option>
+                <option value="2">신한은행</option>
+                <option value="3">농협은행</option>
+              </select>
+            </div>
+            <div class="mb-2">
+              <input type="account" class="form-control bg-grey" placeholder="계좌번호 입력">
+            </div>
+            <div class="mb-2">
+              <input type="name" class="form-control bg-grey" placeholder="입금자명 입력">
+            </div>
+            <div class="mb-2">
+              <input type="phone" class="form-control bg-grey" placeholder="연락처 입력">
+            </div>
+
+            <div class="form-check my-2">
+              <input class="form-check-input float-none rounded-pill" type="checkbox" value=""
+                id="flexCheckIndeterminate" style="margin-top:6px;">
+              <label class="form-check-label fs-7" for="flexCheckIndeterminate">
+                입금정보 저장
+              </label>
+            </div>
+
+            <div class="text-start mt-4">
+              <h5 class="mb-3">매입수수료는 <strong class="fs-4">10%</strong>입니다.</h5>
+              <ul class="ps-0">
+                <li class="d-flex mb-2">
+                  <p class="me-2 mb-0">-</p>
+                  <p class="fs-7 mb-0">거래건에 대해 건별로 500원의 계좌이체 수수료가 부과됩니다.</p>
+                </li>
+                <li class="d-flex mb-2">
+                  <p class="me-2 mb-0">-</p>
+                  <p class="fs-7 mb-0">매입 신청 시 수수료를 제하고 바로 입금됩니다.</p>
+                </li>
+                <li class="d-flex">
+                  <p class="me-2 mb-0">-</p>
+                  <p class="fs-7 mb-0">교환권은 핀번호로 변경 후 입력해 주세요.</p>
+                </li>
+              </ul>
+            </div>
+
+            <button type="submit" class="btn btn-dark w-100">교환신청</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+    <!-- /우측 교환신청 고정 -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark">
+    <div class="container-xxl p-4 pb-6 pb-lg-4">
+      <div>
+        <a class="navbar-brand fw-bolder fs-2 me-5 me-xl-6 me-md-5 text-white" href="index.html"
+          title="M-TICKET">M-TICKET</a></a>
+      </div>
+      <div class="mt-4">
+        <p class="mb-0"><a href="tel:010-1234-5678" class="navbar-brand text-white fs-3 fw-bold">010-1234-5678</a></p>
+        <p class="text-white">365일 연중무휴 24시간 상담 가능합니다</p>
+      </div>
+
+      <div class="text-white text-opacity-75">
+        <ul class="d-flex flex-wrap gap-1 gap-md-3 ps-0 mb-0">
+          <li class="fs-7">M-TICKET</li>
+          <div class="vr mt-1" style="height:10px;"></div>
+          <li class="fs-7"><span class="pe-2">사업자</span>M-TICKET</li>
+          <div class="vr mt-1" style="height:10px;"></div>
+          <li class="fs-7"><span class="pe-2">대표</span>홍길동</li>
+          <div class="vr mt-1" style="height:10px;"></div>
+          <li class="fs-7"><span class="pe-2">주소</span>인천광역시</li>
+        </ul>
+        <ul class="d-flex flex-wrap gap-1 gap-md-3 ps-0 mb-0">
+          <li class="fs-7"><span class="pe-2">사업자등록번호</span>111-11-111111</li>
+          <div class="vr mt-1" style="height:10px;"></div>
+          <li class="fs-7"><span class="pe-2">개인정보책임관리자</span>홍길동</li>
+        </ul>
+      </div>
+      <div class="">
+        <ul class="d-block d-lg-flex gap-4 ps-0 mb-0 mt-4">
+          <li><a class="text-white" href="policy_privacy.html">개인정보처리방침</a></li>
+          <li><a class="text-white" href="policy_service.html">서비스 이용약관</a></li>
+          <li class="text-white text-opacity-75 ms-auto mt-3 mt-md-3 mt-lg-0 fs-7"> © 2023 M-TICKET — ALL RIGHTS
+            RESERVED.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+    <!-- 모바일 우측 하단 픽스 아이콘-->
+    <div class="fixed-icon d-block d-lg-none position-fixed z-3 bottom-5 end-1">
+      <a href="" class="d-block"><img src="../mongsang/assets/img/ico_app.png"></a>
+      <button class="border-0 bg-transparent p-0 mt-2" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img
+          src="../mongsang/assets/img/ico_calculator.png"></button>
+      <a href="" class="d-block mt-2"><img src="../mongsang/assets/img/ico_kakao.png"></a>
+    </div>
+  
+    <!-- 계산기 -->
+    <div class="calculator offcanvas offcanvas-end rounded-4 border-0 overflow-hidden shadow z-1200 top-auto bottom-1 end-1" data-bs-scroll="true"
+      data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel"
+      style="max-width:320px;">
+      <div class="offcanvas-header bg-point bg-gradient text-white py-4">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">실수령액 계산기</h5>
+        <button type="button" class="text-white border-0 bg-transparent" data-bs-dismiss="offcanvas"
+          aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+            class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+          </svg></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="calculator">
+          <div class="calculator_cont">
+            <form>
+              <div class="mb-3 position-relative">
+                <label for="calculator_1" class="form-label">상품권 교환 금액</label>
+                <input type="text" class="form-control text-end bg-grey pe-4 fs-5" id="calculator_1">
+                <span class="position-absolute top-50 mt-1" style="right:10px;">원</span>
+              </div>
+              <div class="radio_type1 mb-3">
+                <div class=" d-flex border rounded-3 form-check form-check-inline text-center m-0 p-0">
+                  <div class="col-6">
+                    <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+                    <label class="btn w-100" for="option5">컬쳐랜드</label>
+                  </div>
+                  <div class="col-6">
+                    <input type="radio" class="btn-check d-block" name="options-base" id="option6" autocomplete="off">
+                    <label class="btn w-100" for="option6">해피머니</label>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="result_area">
+                <div class="align-items-center">
+                  <ul class="w-100 mb-0 bg-grey p-3 rounded-3">
+                    <li class="d-flex mb-2">
+                      <p class="col-6 info fs-7 mb-0">상품권 교환 금액</p>
+                      <p class="col-6 text-end fs-7 mb-0">0<span class="ms-1">원</span></p>
+                    </li>
+                    <li class="d-flex mb-2">
+                      <p class="col-6 info fs-7 mb-0">매입 수수료율</p>
+                      <p class="col-6 text-end fs-7 mb-0">0<span class="ms-1">%</span></p>
+                    </li>
+                    <li class="d-flex">
+                      <p class="col-6 info fs-7 mb-0">계좌이체 수수료</p>
+                      <p class="col-6 text-end fs-7 mb-0">0<span class="ms-1">원</span></p>
+                    </li>
+                  </ul>
+                  <ul class="w-100 p-3 border mt-2 rounded-3 border-dark">
+                    <li class="d-flex">
+                      <p class="col-6 info fs-7 mb-0">입금 예정 금액</p>
+                      <p class="col-6 text-end fs-7 mb-0">0<span class="ms-1">원</span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <!-- JS -->
+  <script src="../mongsang/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+    // 반응형 우측 고정메뉴
+    $(".mobile_fixed_btn").click(function () {
+      $(".right_cont").css({
+        "top": "0",
+        "overflow": "scroll"
+      });
+      $(".down").show();
+      $(".up").hide();
+      $("body").css("overflow", "hidden");
+    });
+
+    $(".mobile_fixed").click(function () {
+      $(".right_cont").css({
+        "top": "100%",
+        "overflow": "scroll"
+      });
+      $(".down").hide();
+      $(".up").show();
+      $("body").css("overflow", "scroll");
+    });
+
+    // 960이하로 줄어들 경우 스크롤 탑으로
+    $(window).resize(function () {
+      if ($(window).width() < 960) {
+        $(".right_cont").scrollTop(0);
+      }
+    });
+
+    //자주하는 질문 링크 이동
+    $(function(){
+      $(".accordion-item").each(function(index){
+        let name = $(this).attr('id', 'faq' + index);
+        if (location.hash == "#faq"+index){ 
+          $(this).find('button').removeClass("collapsed");
+          $(this).find('div').addClass("show");
+        }
+      });
+    });
+  </script>
+</body>
+
+
+</html>

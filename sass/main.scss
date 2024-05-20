@@ -1,0 +1,41 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+
+// custom css ================================================== -->
+
+/* 스크롤 숨김 */
+.scroll_board::-webkit-scrollbar,
+.right_cont::-webkit-scrollbar{ display:none; }
+
+/* 우측 고정 신청폼 */
+.right_cont { top:130px; overflow:scroll; }
+
+/* 태블릿 */
+@media (min-width: 960px) {
+    .right_cont { top: 130px !important; overflow:scroll !important; }
+}
+
+@media (max-width: 960px) {
+    /* 네비게이션 */
+    .offcanvas-body-position { position:relative !important; right:auto !important; flex-grow:5; }
+
+    /* 우측 고정 신청폼 */
+    .right_cont {
+        position:fixed !important;
+        border-left:none !important;
+        padding:0 !important;
+        width:100%;
+        left:0;
+        top:100%;
+        height:100vh !important;
+        // margin-top:-60px;
+        transition:all 0.5s;
+        overflow:hidden;
+        z-index:1200 !important;
+    }
+    .vr { display:none; }
+
+    /* 내 교환내역 */
+    .login{ width:100% !important; }
+}

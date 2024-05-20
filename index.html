@@ -1,0 +1,1001 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="mongtree">
+  <meta name="author" content="mongtree">
+  <meta name="generator" content="mongtree">
+  <title>mongtree</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../mongsang/css/main.min.css" rel="stylesheet">
+</head>
+
+<body class="pt-5 pt-lg-6">
+  <header>
+    <nav class="navbar navbar-expand-lg py-lg-3 shadow-sm fixed-top bg-white z-1100">
+      <div class="container-xxl position-relative px-3 px-lg-4">
+        <a class="navbar-brand fw-bolder fs-2 me-5 me-xl-6 me-md-5" href="index.html">M-TICKET</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header py-lg-3">
+            <a class="navbar-brand fw-bolder fs-2 me-5 me-xl-6 me-md-5" href="index.html">M-TICKET</a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-lg-flex">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="realtime_order.html">실시간 교환현황</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="giftcard_list.html">매입상품권 목록</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">고객센터</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="offcanvas-body offcanvas-body-position d-inline d-lg-flex gap-2 position-absolute end-2">
+            <a href=""><img src="../mongsang/assets/img/ico_app.png"></a>
+            <button class="border-0 bg-transparent p-0" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img
+                src="../mongsang/assets/img/ico_calculator.png"></button>
+            <a href=""><img src="../mongsang/assets/img/ico_kakao.png"></a>
+            <a href="history_login.html" class="btn btn-point text-white rounded-pill ml-5 px-4">내 교환내역</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="d-block d-lg-flex p-3 p-lg-4 container-xxl position-relative">
+    <div class="left_cont col-12 col-xxl-9 col-xl-8 col-lg-7 pe-0 pe-lg-3">
+      <!-- 메인배너 -->
+      <section class="section1 swiper-container overflow-hidden">
+        <style>
+          /* 배너 크기*/
+          .main_banner img {
+            max-height: 450px;
+            min-height: 450px;
+          }
+
+          .sub_banner img {
+            max-height: 450px;
+            min-height: 450px;
+          }
+
+          @media (max-width: 1240px) {
+            .main_banner img {
+              max-height: 350px;
+              min-height: 350px;
+            }
+
+            .sub_banner img {
+              max-height: 150px;
+              min-height: 150px;
+            }
+          }
+
+          @media (max-width: 960px) {
+
+            .main_banner img {
+              max-height: 250px;
+              min-height: 250px;
+            }
+
+            .sub_banner img {
+              max-height: 100px;
+              min-height: 100px;
+            }
+
+            .board_height {
+              max-height: 100% !important;
+              min-height: 100% !important;
+            }
+
+            .scroll_board,
+            .scroll_board .swiper-container,
+            .scroll_board .swiper-wrapper {
+              height: 300px !important;
+            }
+          }
+        </style>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide d-block d-xl-flex">
+            <div class="col-12 col-xl-8 position-relative">
+              <div class="main_banner img">
+                <img class="rounded-5 w-100" src="../mongsang/assets/img/main_banner1.jpg" style="object-fit:cover;">
+              </div>
+              <div class="txt position-absolute top-0 start-0 p-4">
+                <p class="text-white">M-TICKET</p>
+                <div class="text-white mt-4 mt-lg-6">
+                  <p class="fs-5 mb-3">1분 이내 빠른입금</p>
+                  <p class="fs-2 mb-0 lh-1"><strong>상품권 매입</strong></p>
+                  <p class="fs-2">모바일로 편하게!</p>
+                </div>
+              </div>
+            </div>
+            <div class="sub_banner col-12 col-xl-4 ps-0 ps-xl-3 pt-3 pt-xl-0">
+              <img class="rounded-5 w-100" src="../mongsang/assets/img/main_banner2.jpg" style="object-fit:cover">
+            </div>
+          </div>
+
+          <div class="swiper-slide d-block d-xl-flex">
+            <div class="col-12 col-xl-8 position-relative">
+              <div class="main_banner img">
+                <img class="rounded-5 w-100" src="../mongsang/assets/img/main_banner1.jpg" style="object-fit:cover;">
+              </div>
+              <div class="txt position-absolute top-0 start-0 p-4">
+                <p class="text-white">M-TICKET</p>
+                <div class="text-white mt-4 mt-lg-6">
+                  <p class="fs-5 mb-3">1분 이내 빠른입금</p>
+                  <p class="fs-2 mb-0 lh-1"><strong>상품권 매입</strong></p>
+                  <p class="fs-2">모바일로 편하게!</p>
+                </div>
+              </div>
+            </div>
+            <div class="sub_banner col-12 col-xl-4 ps-0 ps-xl-3 pt-3 pt-xl-0">
+              <img class="rounded-5 w-100" src="../mongsang/assets/img/main_banner2.jpg" style="object-fit:cover">
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="swiper-pagination"></div> -->
+      </section>
+      <!-- /메인배너 -->
+
+      <!-- 상품권 소개 -->
+      <section class="section2 my-5">
+        <div class="d-block d-xl-block d-xxl-flex align-items-center">
+          <div class="sub_left_cont col-12 col-xxl-4 mb-2">
+            <h4>회원가입 없이<br><span class="fw-normal">간편한 상품권 현금화</span></h4>
+
+            <div class="swiper-container vertical-slide overflow-hidden" style="max-height:48px;">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide overflow-hidden">
+                  <p class="fs-3">컬쳐랜드 상품권 <span class="fs-10 fw-bolder text-point d-inline-block lh-1">90%</span></p>
+                </div>
+                <div class="swiper-slide overflow-hidden">
+                  <p class="fs-3 mb-0">해피머니 상품권 <span class="fs-10 fw-bolder text-point d-inline-block lh-1">90%</span>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="sub_right_cont col-12 col-xl-12 col-xxl-8 pt-3 pt-xl-3 pt-xxl-0">
+            <div class="row">
+              <div class="col-6 col-xl-3 pb-3">
+                <div class="bg-grey px-1 py-4 px-xl-2 py-xl-5 px-xl-2 py-xl-5 px-xxl-2 py-xxl-4 text-center rounded-5">
+                  <img src="../mongsang/assets/img/ico_point1.png" class="d-block m-auto" width="50" height="50">
+                  <span class="fs-8 d-block mt-1 mb-2 text-dark text-opacity-50">Automatic system</span>
+                  <h6 class="fs-7 fw-normal d-block fw-bold">24시간 자동화 시스템</h6>
+                </div>
+              </div>
+
+              <div class="col-6 col-xl-3 pb-3">
+                <div class="bg-grey px-1 py-4 px-xl-2 py-xl-5 px-xl-2 py-xl-5 px-xxl-2 py-xxl-4 text-center rounded-5">
+                  <img src="../mongsang/assets/img/ico_point2.png" class="d-block m-auto" width="50" height="50">
+                  <span class="fs-8 d-block mt-1 mb-2 text-dark text-opacity-50">Safe service</span>
+                  <h6 class="fs-7 fw-normal d-block fw-bold">인증된 안심 서비스</h6>
+                </div>
+              </div>
+
+              <div class="col-6 col-xl-3 pb-3">
+                <div class="bg-grey px-1 py-4 px-xl-2 py-xl-5 px-xl-2 py-xl-5 px-xxl-2 py-xxl-4 text-center rounded-5">
+                  <img src="../mongsang/assets/img/ico_point3.png" class="d-block m-auto" width="50" height="50">
+                  <span class="fs-8 d-block mt-1 mb-2 text-dark text-opacity-50">Lowest commission</span>
+                  <h6 class="fs-7 fw-normal d-block fw-bold">업계 최저 수수료</h6>
+                </div>
+              </div>
+
+              <div class="col-6 col-xl-3 pb-3">
+                <div class="bg-grey px-1 py-4 px-xl-2 py-xl-5 px-xl-2 py-xl-5 px-xxl-2 py-xxl-4 text-center rounded-5">
+                  <img src="../mongsang/assets/img/ico_point4.png" class="d-block m-auto" width="50" height="50">
+                  <span class="fs-8 d-block mt-1 mb-2 text-dark text-opacity-50">Fast & Easy</span>
+                  <h6 class="fs-7 fw-normal d-block fw-bold">빠르고 간편하다</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /상품권 소개 -->
+
+      <!-- board -->
+      <section class="section3 mt-3 mt-lg-6">
+        <div class="d-block d-xxl-flex flex-wrap">
+          <div class="left_board col-12 col-xxl-4 d-block d-xxl-block">
+            <div class="notice col-12 col-lg-12 mb-5 mb-xxl-3 mb-xl-5">
+              <div>
+                <div class="title d-flex align-items-center mb-3">
+                  <div class="ico_bg me-3 bg-grey rounded-pill text-center"
+                    style="width:50px; height:50px; line-height:50px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="25" height="25" fill="currentColor" class="bi bi-megaphone-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-11zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25.222 25.222 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56V3.224zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009a68.14 68.14 0 0 1 .496.008 64 64 0 0 1 1.51.048zm1.39 1.081c.285.021.569.047.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a65.81 65.81 0 0 1 1.692.064c.327.017.65.037.966.06z" />
+                    </svg></div>
+                  <div>
+                    <h5 class="fw-bolder mb-0">공지사항</h5>
+                    <p class="fs-7 mb-0">공지사항을 확인해보세요.</p>
+                  </div>
+                </div>
+
+                <div class="border rounded-5 p-3">
+                  <div class="overflow-hidden board_height" style="max-height:125px; min-height:125px;">
+                    <table class="table fs-7" style="table-layout: fixed;">
+                      <colgroup>
+                        <col width="70%">
+                        <col width="30%">
+                      </colgroup>
+                      <tbody>
+                        <tr>
+                          <td><a href="view.html" class="text-dark d-block overflow-hidden text-nowrap"
+                              style="text-overflow:ellipsis">제목을 입력해주세요</a></td>
+                          <td class="text-end">23.11.01</td>
+                        </tr>
+                        <tr>
+                          <td><a href="view.html" class="text-dark d-block overflow-hidden text-nowrap"
+                              style="text-overflow:ellipsis">제목을 입력해주세요</a></td>
+                          <td class="text-end">23.11.01</td>
+                        </tr>
+                        <tr>
+                          <td><a href="view.html" class="text-dark d-block overflow-hidden text-nowrap"
+                              style="text-overflow:ellipsis">제목을 입력해주세요</a></td>
+                          <td class="text-end">23.11.01</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="text-end">
+                    <a href="notice.html" class="btn fs-7 text-dark pe-0"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-plus-square me-1" viewBox="0 0 16 16">
+                        <path
+                          d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                        <path
+                          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                      </svg>전체보기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq col-12 col-lg-12 mb-5 mb-xxl-3 mb-xl-5">
+              <div class="ms-0 mt-3">
+                <div class="title d-flex align-items-center mb-3">
+                  <div class="ico_bg me-3 bg-grey rounded-pill text-center"
+                    style="width:50px; height:50px; line-height:50px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="30" height="30" fill="currentColor" class="bi bi-question-lg" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z" />
+                    </svg></div>
+                  <div>
+                    <h5 class="fw-bolder mb-0">자주하는 질문</h5>
+                    <p class="fs-7 mb-0">자주하는 질문을 확인해보세요.</p>
+                  </div>
+                </div>
+                <div class="border rounded-5 p-3">
+                  <div class="overflow-hidden board_height" style="max-height:125px; min-height:125px;">
+                    <table class="table fs-7" style="table-layout: fixed;">
+                      <tbody>
+                        <tr>
+                          <td><a href="faq.html#faq0" class="text-dark d-block overflow-hidden text-nowrap"
+                              style="text-overflow:ellipsis">자주하는 질문입니다.</a></td>
+                        </tr>
+                        <tr>
+                          <td><a href="faq.html#faq1" class="text-dark d-block overflow-hidden text-nowrap"
+                              style="text-overflow:ellipsis">자주하는 질문입니다.</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="text-end">
+                    <a href="faq.html" class="btn fs-7 text-dark pe-0"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-plus-square me-1" viewBox="0 0 16 16">
+                        <path
+                          d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                        <path
+                          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                      </svg>전체보기</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="right_board col-12 col-xxl-8 col-xl-12 mt-3 m-xxl-0">
+            <div class="realtime">
+              <div class="ms-0 ms-xxl-3">
+                <div class="title d-flex align-items-center mb-3">
+                  <div class="ico_bg me-3 bg-grey rounded-pill text-center"
+                    style="width:50px; height:50px; line-height:50px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="30" height="30" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
+                      <path
+                        d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z" />
+                      <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z" />
+                      <path
+                        d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
+                    </svg></div>
+                  <div>
+                    <h5 class="fw-bolder mb-0">실시간 교환현황</h5>
+                    <p class="fs-7 mb-0">교환현황을 확인해보세요.</p>
+                  </div>
+                </div>
+                <div class="scroll_board border rounded-5 pt-0 pb-0 overflow-hidden position-relative"
+                  style="height:495px;">
+                  <div class="position-sticky top-0 bg-white p-3 pt-0 pb-0 z-3">
+                    <ul class="thead ps-0 border-bottom">
+                      <li class="d-flex">
+                        <p class="col-8 col-xl-5 py-3 mb-0">교환신청정보</p>
+                        <p class="col-2 d-none d-xl-block py-3 mb-0">신청시간</p>
+                        <p class="col-2 d-none d-xl-block py-3 mb-0">완료시간</p>
+                        <p class="col-4 col-xl-3 py-3 text-end mb-0">소요시간<span class="d-none d-xl-inline ">/
+                            상태</span></p>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="swiper-container px-3 pt-0" style="max-height:495x;">
+                    <ul class="swiper-wrapper tbody ps-0" style="height:400px;">
+                      <li class="swiper-slide d-flex align-items-center">
+                        <p class="col-9 col-sm-8 col-xl-5 info fs-7">
+                          <span class="">[11-02]</span>
+                            <span class="me-3">[이**]</span>
+                            <span><img src="../mongsang/assets/img/ico_voucher_c.png" width="20" height="20"></span>
+                            <span>10,000원</span>
+                        </p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:19</p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:24</p>
+                        <p class="col-3 col-sm-4 col-xl-3 text-end fs-7">
+                          <span class="d-none d-sm-inline fs-7">00분 05초</span>
+                          <span class="d-lg-inline badge bg-success ms-2 p-2 fs-8">입금완료</span>
+                        </p>
+                      </li>
+                      <li class="swiper-slide d-flex align-items-center">
+                        <p class="col-9 col-sm-8 col-xl-5 info fs-7">
+                          <span class="">[11-02]</span>
+                          <span class="me-3">[이**]</span>
+                          <span><img src="../mongsang/assets/img/ico_voucher_c.png" width="20" height="20"></span>
+                          <span>10,000원</span>
+                        </p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:19</p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:24</p>
+                        <p class="col-3 col-sm-4 col-xl-3 text-end fs-7">
+                          <span class="d-none d-sm-inline fs-7">00분 05초</span>
+                          <span class="d-lg-inline badge bg-secondary ms-2 p-2 fs-8">입금대기</span>
+                        </p>
+                      </li>
+                      <li class="swiper-slide d-flex align-items-center">
+                        <p class="col-9 col-sm-8 col-xl-5 info fs-7">
+                          <span class="">[11-02]</span>
+                          <span class="me-3">[이**]</span>
+                          <span><img src="../mongsang/assets/img/ico_voucher_c.png" width="20" height="20"></span>
+                          <span>10,000원</span>
+                        </p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:19</p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:24</p>
+                        <p class="col-3 col-sm-4 col-xl-3 text-end fs-7">
+                          <span class="d-none d-sm-inline fs-7">00분 05초</span>
+                          <span class="d-lg-inline badge bg-danger ms-2 p-2 fs-8">처리불가</span>
+                        </p>
+                      </li>
+                      <li class="swiper-slide d-flex align-items-center">
+                        <p class="col-9 col-sm-8 col-xl-5 info fs-7">
+                          <span class="">[11-02]</span>
+                            <span class="me-3">[이**]</span>
+                            <span><img src="../mongsang/assets/img/ico_voucher_c.png" width="20" height="20"></span>
+                            <span>10,000원</span>
+                        </p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:19</p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:24</p>
+                        <p class="col-3 col-sm-4 col-xl-3 text-end fs-7">
+                          <span class="d-none d-sm-inline fs-7">00분 05초</span>
+                          <span class="d-lg-inline badge bg-success ms-2 p-2 fs-8">입금완료</span>
+                        </p>
+                      </li>
+                      <li class="swiper-slide d-flex align-items-center">
+                        <p class="col-9 col-sm-8 col-xl-5 info fs-7">
+                          <span class="">[11-02]</span>
+                          <span class="me-3">[이**]</span>
+                          <span><img src="../mongsang/assets/img/ico_voucher_c.png" width="20" height="20"></span>
+                          <span>10,000원</span>
+                        </p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:19</p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:24</p>
+                        <p class="col-3 col-sm-4 col-xl-3 text-end fs-7">
+                          <span class="d-none d-sm-inline fs-7">00분 05초</span>
+                          <span class="d-lg-inline badge bg-secondary ms-2 p-2 fs-8">입금대기</span>
+                        </p>
+                      </li>
+                      <li class="swiper-slide d-flex align-items-center">
+                        <p class="col-9 col-sm-8 col-xl-5 info fs-7">
+                          <span class="">[11-02]</span>
+                          <span class="me-3">[이**]</span>
+                          <span><img src="../mongsang/assets/img/ico_voucher_c.png" width="20" height="20"></span>
+                          <span>10,000원</span>
+                        </p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:19</p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:24</p>
+                        <p class="col-3 col-sm-4 col-xl-3 text-end fs-7">
+                          <span class="d-none d-sm-inline fs-7">00분 05초</span>
+                          <span class="d-lg-inline badge bg-danger ms-2 p-2 fs-8">처리불가</span>
+                        </p>
+                      </li>
+                      <li class="swiper-slide d-flex align-items-center">
+                        <p class="col-9 col-sm-8 col-xl-5 info fs-7">
+                          <span class="">[11-02]</span>
+                            <span class="me-3">[이**]</span>
+                            <span><img src="../mongsang/assets/img/ico_voucher_c.png" width="20" height="20"></span>
+                            <span>10,000원</span>
+                        </p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:19</p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:24</p>
+                        <p class="col-3 col-sm-4 col-xl-3 text-end fs-7">
+                          <span class="d-none d-sm-inline fs-7">00분 05초</span>
+                          <span class="d-lg-inline badge bg-success ms-2 p-2 fs-8">입금완료</span>
+                        </p>
+                      </li>
+                      <li class="swiper-slide d-flex align-items-center">
+                        <p class="col-9 col-sm-8 col-xl-5 info fs-7">
+                          <span class="">[11-02]</span>
+                          <span class="me-3">[이**]</span>
+                          <span><img src="../mongsang/assets/img/ico_voucher_c.png" width="20" height="20"></span>
+                          <span>10,000원</span>
+                        </p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:19</p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:24</p>
+                        <p class="col-3 col-sm-4 col-xl-3 text-end fs-7">
+                          <span class="d-none d-sm-inline fs-7">00분 05초</span>
+                          <span class="d-lg-inline badge bg-secondary ms-2 p-2 fs-8">입금대기</span>
+                        </p>
+                      </li>
+                      <li class="swiper-slide d-flex align-items-center">
+                        <p class="col-9 col-sm-8 col-xl-5 info fs-7">
+                          <span class="">[11-02]</span>
+                          <span class="me-3">[이**]</span>
+                          <span><img src="../mongsang/assets/img/ico_voucher_c.png" width="20" height="20"></span>
+                          <span>10,000원</span>
+                        </p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:19</p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:24</p>
+                        <p class="col-3 col-sm-4 col-xl-3 text-end fs-7">
+                          <span class="d-none d-sm-inline fs-7">00분 05초</span>
+                          <span class="d-lg-inline badge bg-danger ms-2 p-2 fs-8">처리불가</span>
+                        </p>
+                      </li>
+                      <li class="swiper-slide d-flex align-items-center">
+                        <p class="col-9 col-sm-8 col-xl-5 info fs-7">
+                          <span class="">[11-02]</span>
+                            <span class="me-3">[이**]</span>
+                            <span><img src="../mongsang/assets/img/ico_voucher_c.png" width="20" height="20"></span>
+                            <span>10,000원</span>
+                        </p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:19</p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:24</p>
+                        <p class="col-3 col-sm-4 col-xl-3 text-end fs-7">
+                          <span class="d-none d-sm-inline fs-7">00분 05초</span>
+                          <span class="d-lg-inline badge bg-success ms-2 p-2 fs-8">입금완료</span>
+                        </p>
+                      </li>
+                      <li class="swiper-slide d-flex align-items-center">
+                        <p class="col-9 col-sm-8 col-xl-5 info fs-7">
+                          <span class="">[11-02]</span>
+                          <span class="me-3">[이**]</span>
+                          <span><img src="../mongsang/assets/img/ico_voucher_c.png" width="20" height="20"></span>
+                          <span>10,000원</span>
+                        </p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:19</p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:24</p>
+                        <p class="col-3 col-sm-4 col-xl-3 text-end fs-7">
+                          <span class="d-none d-sm-inline fs-7">00분 05초</span>
+                          <span class="d-lg-inline badge bg-secondary ms-2 p-2 fs-8">입금대기</span>
+                        </p>
+                      </li>
+                      <li class="swiper-slide d-flex align-items-center">
+                        <p class="col-9 col-sm-8 col-xl-5 info fs-7">
+                          <span class="">[11-02]</span>
+                          <span class="me-3">[이**]</span>
+                          <span><img src="../mongsang/assets/img/ico_voucher_c.png" width="20" height="20"></span>
+                          <span>10,000원</span>
+                        </p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:19</p>
+                        <p class="col-2 d-none d-xl-block fs-7">17:53:24</p>
+                        <p class="col-3 col-sm-4 col-xl-3 text-end fs-7">
+                          <span class="d-none d-sm-inline fs-7">00분 05초</span>
+                          <span class="d-lg-inline badge bg-danger ms-2 p-2 fs-8">처리불가</span>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /board -->
+
+      <!-- 상품권 교환 안내 및 유의사항 -->
+      <section>
+        <div class="accordion mt-3" id="accordionExample">
+          <div class="accordion-item rounded-5 bg-grey">
+            <h2 class="accordion-header bg-grey rounded-5 p-1">
+              <button class="accordion-button rounded-5 bg-white border border-top-0 border-bottom-0" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                상품권 교환 안내 및 유의사항
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show bg-grey border-bottom rounded-5"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div>
+                  <h3 class="fs-5">유의사항</h3>
+                  <p class="fs-7">
+                    1. 정확한 상품권 핀번호와 입금정보를 적어주세요.<br>
+                    2. 주문이 완료 되면 상품권 취소 및 환불이 불가합니다.<br>
+                    3. 올바르지 않은 핀번호를 지속적으로 주문 시 사이트 이용이 제한됩니다.<br>
+                    4. 불법으로 획득한 상품권을 현금화하는 경우 이체가 보류될 수 있습니다.<br>
+                    5. 고객님이 신청하신 거래정보는 분쟁해결 및 수사기관의 요청에 따른 협조를 위하여 삭제가 불가능합니다.<br>
+                    6. 고객님의 정보는 안전하게 보호되며 법률에 의한 경우가 아니고서는 제 3자 제공 등 다른 목적으로 이용되지 않습니다.
+                  </p>
+                </div>
+
+                <div class="mt-4">
+                  <h3 class="fs-5">상품권 교환 안내</h3>
+                  <p class="fs-7">
+                    1. '내 주문 조회'에서 주문상태를 확인하실 수 있습니다.<br>
+                    2. 상품권 매입은 24시간 운영됩니다.
+                  </p>
+                </div>
+
+                <div class="mt-4">
+                  <h3 class="fs-5">수수료 안내</h3>
+                  <p class="fs-7">
+                    1. 상품권 매입수수료는 10%입니다.<br>
+                    2. 계좌이체 수수료는 500원입니다.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /상품권 교환 안내 및 유의사항 -->
+    </div>
+
+    <!-- 우측 교환신청 고정 -->
+    <div class="mobile_fixed_btn d-block d-lg-none shadow-sm text-center border-top rounded-top-5 py-3 bg-white w-100 z-3" style="cursor:pointer; position:fixed; bottom:0;left:0;">상품권 매입 <button class="mobile-nav position-absolute lh-1 border-0 bg-white" style="right:2.5rem;">
+        <svg class="up" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-chevron-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="right_cont col-12 col-xxl-3 col-xl-4 col-lg-5 container-xxl position-sticky z-3"
+      style="transform:translate(0); height:92vh;">
+      <div class="mobile_fixed d-block d-lg-none shadow-sm text-center border-top rounded-top-5 py-3 bg-white"
+        style="cursor:pointer">상품권 매입 <button class="mobile-nav position-absolute lh-1 border-0 bg-white"
+          style="right:2.5rem;"><svg class="down" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+          </svg>
+        </button>
+      </div>
+      <aside class="p-4 pe-4 pe-lg-0 pt-0 bg-white end-0 border-start">
+        <!-- 상품권 선택 탭 -->
+        <div class="mb-4">
+          <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+            <li class="nav-item col-6 fs-7 p-1" role="presentation">
+              <button class="nav-link p-1 border border-2 w-100 rounded-2 text-dark active" data-bs-toggle="tab"
+                data-bs-target="#tab1-tab-pane" type="button" role="tab" aria-controls="tab1-tab-pane"
+                aria-selected="true">컬쳐랜드 문화상품권</button>
+            </li>
+            <li class="nav-item col-6 fs-7 p-1" role="presentation">
+              <button class="nav-link p-1 border border-2 w-100 rounded-2 text-dark" data-bs-toggle="tab"
+                data-bs-target="#tab2-tab-pane" type="button" role="tab" aria-controls="tab2-tab-pane"
+                aria-selected="false">해피머니 상품권</button>
+            </li>
+            <li class="nav-item col-6 fs-7 p-1" role="presentation">
+              <button class="nav-link p-1 border border-2 w-100 rounded-2 text-dark" data-bs-toggle="tab"
+                data-bs-target="#tab3-tab-pane" type="button" role="tab" aria-controls="tab3-tab-pane"
+                aria-selected="false">컬쳐랜드 교환권</button>
+            </li>
+            <li class="nav-item col-6 fs-7 p-1" role="presentation">
+              <button class="nav-link p-1 border border-2 w-100 rounded-2 text-dark" data-bs-toggle="tab"
+                data-bs-target="#tab4-tab-pane" type="button" role="tab" aria-controls="tab4-tab-pane"
+                aria-selected="false">해피머니 교환권</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 핀번호 자동 추출기 -->
+        <div class="mb-5">
+          <div class="title d-flex align-items-center mb-3">
+            <div class="ico_bg me-2 bg-grey rounded-pill text-center lh-3"
+              style="width:50px; height:50px; line-height:50px;"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                height="30" fill="currentColor" class="bi bi-calculator-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm2 .5v2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0-.5.5zm0 4v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zM4.5 9a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM4 12.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zM7.5 6a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM7 9.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm.5 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM10 6.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm.5 2.5a.5.5 0 0 0-.5.5v4a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-.5-.5h-1z" />
+              </svg></div>
+            <div>
+              <h5 class="fw-bolder mb-0">핀번호 자동 추출기</h5>
+              <p class="fs-7 mb-0">전송받은 문자를 입력해주세요.</p>
+            </div>
+          </div>
+          <form class="text-end">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="tab1-tab-pane" role="tabpanel" aria-labelledby="tab1-tab"
+                tabindex="0">
+                <div class="input-group mb-2">
+                  <textarea class="form-control bg-grey rounded-4" rows="7" aria-label="With textarea"
+                    placeholder="컬쳐랜드 문화상품권"></textarea>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab2-tab-pane" role="tabpanel" aria-labelledby="tab2-tab" tabindex="0">
+                <div class="input-group mb-2">
+                  <textarea class="form-control bg-grey rounded-4" rows="7" aria-label="With textarea"
+                    placeholder="해피머니 상품권"></textarea>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab3-tab-pane" role="tabpanel" aria-labelledby="tab3-tab" tabindex="0">
+                <div class="input-group mb-2">
+                  <textarea class="form-control bg-grey rounded-4" rows="7" aria-label="With textarea"
+                    placeholder="컬쳐랜드 교환권"></textarea>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="tab4-tab-pane" role="tabpanel" aria-labelledby="tab4-tab" tabindex="0">
+                <div class="input-group mb-2">
+                  <textarea class="form-control bg-grey rounded-4" rows="7" aria-label="With textarea"
+                    placeholder="해피머니 교환권"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-dark w-50">핀번호 추출</button>
+          </form>
+        </div>
+
+        <!-- 핀번호 수동 입력기 -->
+        <div class="mb-5">
+          <div class="title d-flex align-items-center mb-3">
+            <div class="ico_bg me-2 bg-grey rounded-pill text-center"
+              style="width:50px; height:50px; line-height:50px;"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                height="30" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+              </svg></div>
+            <div>
+              <h5 class="fw-bolder mb-0">핀번호 수동 입력</h5>
+              <p class="fs-7 mb-0">정확한 정보로 작성해주세요.</p>
+            </div>
+          </div>
+          <form>
+            <div class="input-group mb-1">
+              <span class="input-group-text bg-dark text-white">1</span>
+              <input type="text" class="form-control" placeholder="핀(PIN)번호 입력" aria-label="FIN"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-1">
+              <span class="input-group-text bg-dark text-white">2</span>
+              <input type="text" class="form-control" placeholder="핀(PIN)번호 입력" aria-label="FIN"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-1">
+              <span class="input-group-text bg-dark text-white">3</span>
+              <input type="text" class="form-control" placeholder="핀(PIN)번호 입력" aria-label="FIN"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-1">
+              <span class="input-group-text bg-dark text-white">4</span>
+              <input type="text" class="form-control" placeholder="핀(PIN)번호 입력" aria-label="FIN"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-1">
+              <span class="input-group-text bg-dark text-white">5</span>
+              <input type="text" class="form-control" placeholder="핀(PIN)번호 입력" aria-label="FIN"
+                aria-describedby="basic-addon1">
+            </div>
+            <button type="submit" class="btn btn-dark w-100">핀번호 추가 +</button>
+          </form>
+        </div>
+
+        <!-- 입금정보 확인 -->
+        <div class="mb-5">
+          <div class="title d-flex align-items-center mb-3">
+            <div class="ico_bg me-2 bg-grey rounded-pill text-center lh-3"
+              style="width:50px; height:50px; line-height:50px;"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                height="30" fill="currentColor" class="bi bi-vector-pen" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828L10.646.646zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z" />
+                <path fill-rule="evenodd" d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086.086-.026z" />
+              </svg></div>
+            <div>
+              <h5 class="fw-bolder mb-0">입금정보 확인</h5>
+              <p class="fs-7 mb-0">계좌 정보를 입력해주세요.</p>
+            </div>
+          </div>
+          <form class="text-end">
+            <div class="mb-2">
+              <select class="form-select mb-2 bg-grey" aria-label="Default select example">
+                <option selected>은행 선택</option>
+                <option value="1">국민은행</option>
+                <option value="2">신한은행</option>
+                <option value="3">농협은행</option>
+              </select>
+            </div>
+            <div class="mb-2">
+              <input type="account" class="form-control bg-grey" placeholder="계좌번호 입력">
+            </div>
+            <div class="mb-2">
+              <input type="name" class="form-control bg-grey" placeholder="입금자명 입력">
+            </div>
+            <div class="mb-2">
+              <input type="phone" class="form-control bg-grey" placeholder="연락처 입력">
+            </div>
+
+            <div class="form-check my-2">
+              <input class="form-check-input float-none rounded-pill" type="checkbox" value=""
+                id="flexCheckIndeterminate" style="margin-top:6px;">
+              <label class="form-check-label fs-7" for="flexCheckIndeterminate">
+                입금정보 저장
+              </label>
+            </div>
+
+            <div class="text-start mt-4">
+              <h5 class="mb-3">매입수수료는 <strong class="fs-4">10%</strong>입니다.</h5>
+              <ul class="ps-0">
+                <li class="d-flex mb-2">
+                  <p class="me-2 mb-0">-</p>
+                  <p class="fs-7 mb-0">거래건에 대해 건별로 500원의 계좌이체 수수료가 부과됩니다.</p>
+                </li>
+                <li class="d-flex mb-2">
+                  <p class="me-2 mb-0">-</p>
+                  <p class="fs-7 mb-0">매입 신청 시 수수료를 제하고 바로 입금됩니다.</p>
+                </li>
+                <li class="d-flex">
+                  <p class="me-2 mb-0">-</p>
+                  <p class="fs-7 mb-0">교환권은 핀번호로 변경 후 입력해 주세요.</p>
+                </li>
+              </ul>
+            </div>
+
+            <button type="submit" class="btn btn-dark w-100">교환신청</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+    <!-- /우측 교환신청 고정 -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark">
+    <div class="container-xxl p-4 pb-6 pb-lg-4">
+      <div>
+        <a class="navbar-brand fw-bolder fs-2 me-5 me-xl-6 me-md-5 text-white" href="index.html"
+          title="M-TICKET">M-TICKET</a></a>
+      </div>
+      <div class="mt-4">
+        <p class="mb-0"><a href="tel:010-1234-5678" class="navbar-brand text-white fs-3 fw-bold">010-1234-5678</a></p>
+        <p class="text-white">365일 연중무휴 24시간 상담 가능합니다</p>
+      </div>
+
+      <div class="text-white text-opacity-75">
+        <ul class="d-flex flex-wrap gap-1 gap-md-3 ps-0 mb-0">
+          <li class="fs-7">M-TICKET</li>
+          <div class="vr mt-1" style="height:10px;"></div>
+          <li class="fs-7"><span class="pe-2">사업자</span>M-TICKET</li>
+          <div class="vr mt-1" style="height:10px;"></div>
+          <li class="fs-7"><span class="pe-2">대표</span>홍길동</li>
+          <div class="vr mt-1" style="height:10px;"></div>
+          <li class="fs-7"><span class="pe-2">주소</span>인천광역시</li>
+        </ul>
+        <ul class="d-flex flex-wrap gap-1 gap-md-3 ps-0 mb-0">
+          <li class="fs-7"><span class="pe-2">사업자등록번호</span>111-11-111111</li>
+          <div class="vr mt-1" style="height:10px;"></div>
+          <li class="fs-7"><span class="pe-2">개인정보책임관리자</span>홍길동</li>
+        </ul>
+      </div>
+      <div class="">
+        <ul class="d-block d-lg-flex gap-4 ps-0 mb-0 mt-4">
+          <li><a class="text-white" href="policy_privacy.html">개인정보처리방침</a></li>
+          <li><a class="text-white" href="policy_service.html">서비스 이용약관</a></li>
+          <li class="text-white text-opacity-75 ms-auto mt-3 mt-md-3 mt-lg-0 fs-7"> © 2023 M-TICKET — ALL RIGHTS
+            RESERVED.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 모바일 우측 하단 픽스 아이콘-->
+  <div class="fixed-icon d-block d-lg-none position-fixed z-3 bottom-5 end-1">
+    <a href="" class="d-block"><img src="../mongsang/assets/img/ico_app.png"></a>
+    <button class="border-0 bg-transparent p-0 mt-2" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><img
+        src="../mongsang/assets/img/ico_calculator.png"></button>
+    <a href="" class="d-block mt-2"><img src="../mongsang/assets/img/ico_kakao.png"></a>
+  </div>
+
+  <!-- 계산기 -->
+  <div
+    class="calculator offcanvas offcanvas-end rounded-4 border-0 overflow-hidden shadow z-1200 top-auto bottom-1 end-1"
+    data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling"
+    aria-labelledby="offcanvasScrollingLabel" style="max-width:320px;">
+    <div class="offcanvas-header bg-point bg-gradient text-white py-4">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">실수령액 계산기</h5>
+      <button type="button" class="text-white border-0 bg-transparent" data-bs-dismiss="offcanvas"
+        aria-label="Close"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+          class="bi bi-x-lg" viewBox="0 0 16 16">
+          <path
+            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+        </svg></button>
+    </div>
+    <div class="offcanvas-body">
+      <div id="calculator">
+        <div class="calculator_cont">
+          <form>
+            <div class="mb-3 position-relative">
+              <label for="calculator_1" class="form-label">상품권 교환 금액</label>
+              <input type="text" class="form-control text-end bg-grey pe-4 fs-5" id="calculator_1">
+              <span class="position-absolute top-50 mt-1" style="right:10px;">원</span>
+            </div>
+            <div class="radio_type1 mb-3">
+              <div class=" d-flex border rounded-3 form-check form-check-inline text-center m-0 p-0">
+                <div class="col-6">
+                  <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+                  <label class="btn w-100" for="option5">컬쳐랜드</label>
+                </div>
+                <div class="col-6">
+                  <input type="radio" class="btn-check d-block" name="options-base" id="option6" autocomplete="off">
+                  <label class="btn w-100" for="option6">해피머니</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="result_area">
+              <div class="align-items-center">
+                <ul class="w-100 mb-0 bg-grey p-3 rounded-3">
+                  <li class="d-flex mb-2">
+                    <p class="col-6 info fs-7 mb-0">상품권 교환 금액</p>
+                    <p class="col-6 text-end fs-7 mb-0">0<span class="ms-1">원</span></p>
+                  </li>
+                  <li class="d-flex mb-2">
+                    <p class="col-6 info fs-7 mb-0">매입 수수료율</p>
+                    <p class="col-6 text-end fs-7 mb-0">0<span class="ms-1">%</span></p>
+                  </li>
+                  <li class="d-flex">
+                    <p class="col-6 info fs-7 mb-0">계좌이체 수수료</p>
+                    <p class="col-6 text-end fs-7 mb-0">0<span class="ms-1">원</span></p>
+                  </li>
+                </ul>
+                <ul class="w-100 p-3 border mt-2 rounded-3 border-dark">
+                  <li class="d-flex">
+                    <p class="col-6 info fs-7 mb-0">입금 예정 금액</p>
+                    <p class="col-6 text-end fs-7 mb-0">0<span class="ms-1">원</span></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="visually-hidden">23</div>
+
+
+  <!-- JS -->
+  <script src="../mongsang/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+    // 메인 배너
+    const swiper = new Swiper('.section1.swiper-container', {
+      direction: 'horizontal',
+      loop: true,
+      spaceBetween: 30
+    });
+
+    // 상품권 소개
+    const swiper2 = new Swiper('.swiper-container.vertical-slide', {
+      direction: 'vertical',
+      slidesPerView: 1,
+      loop: true,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 5000,
+        reverseDirection: false,
+        disableOnInteraction: false,
+      },
+    });
+
+    // 실시간 교환현황
+    const swiper3 = new Swiper('.realtime .swiper-container', {
+      direction: "vertical",
+      slidesPerView: 'auto',
+      loop: false,
+      speed: 2000,
+      allowTouchMove: false,
+      autoplay: {
+        delay: 100,
+        reverseDirection: false,
+        disableOnInteraction: true,
+      },
+      breakpoints: {
+        1240: {
+          slidesPerView: 9,
+        },
+        300: {
+          slidesPerView: 7,
+        },
+      },
+    });
+
+    // 반응형 우측 고정메뉴
+    document.querySelector(".mobile_fixed_btn").addEventListener("click", function () {
+      var rightCont = document.querySelector(".right_cont");
+
+      rightCont.style.top = "0";
+      rightCont.style.overflow = "scroll";
+      document.body.style.overflow = "hidden";
+    });
+
+    document.querySelector(".mobile_fixed").addEventListener("click", function () {
+      var rightCont = document.querySelector(".right_cont");
+
+      rightCont.style.top = "100%";
+      rightCont.style.overflow = "scroll";
+      document.body.style.overflow = "scroll";
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth < 960) {
+        document.querySelector(".right_cont").scrollTop = 0;
+      }
+    });
+    // $(".mobile_fixed_btn").click(function () {
+    //   $(".right_cont").css({
+    //     "top": "0",
+    //     "overflow": "scroll"
+    //   });
+    //   $("body").css("overflow", "hidden");
+    // });
+
+    // $(".mobile_fixed").click(function () {
+    //   $(".right_cont").css({
+    //     "top": "100%",
+    //     "overflow": "scroll"
+    //   });
+    //   $("body").css("overflow", "scroll");
+    // });
+
+    // $(window).resize(function () {
+    //   if ($(window).width() < 960) {
+    //     $(".right_cont").scrollTop(0);
+    //   }
+    // });
+  </script>
+</body>
+
+
+</html>
